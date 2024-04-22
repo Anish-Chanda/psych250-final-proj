@@ -1,5 +1,10 @@
-import { Category } from "../page";
-
+enum Category {
+  communication = "communication",
+  hiring = "hiring",
+  leadership = "leadership",
+  motivation = "motivation",
+  organizationalCulture = "organizationalCulture",
+}
 export type APIResp = {
   startupName: string;
   startupSummary: string;

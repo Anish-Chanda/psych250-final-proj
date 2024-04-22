@@ -6,7 +6,7 @@ import Sidebar from "./components/Sidebar";
 import { Scenario, Scores, Startup } from "./models/Scenario";
 import { defaultScenario } from "./constants/defaultScene";
 
-export enum Category {
+enum Category {
   communication = "communication",
   hiring = "hiring",
   leadership = "leadership",
@@ -14,7 +14,7 @@ export enum Category {
   organizationalCulture = "organizationalCulture",
 }
 
-export const calculatePercentage = (
+const calculatePercentage = (
   score: Scores,
   category: Category,
   questions: Scenario[]
